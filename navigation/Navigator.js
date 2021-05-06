@@ -9,6 +9,14 @@ const Navigator = createStackNavigator({
     Početna: Homepage,
     Knjige: BookList,
     Informacije: BookInfo
+    //drugi argument nam omogucava da definisemo nacin na koji zelimo da nam header izgleda na svim ekranima
+},{
+    defaultNavigationOptions: {
+        headerStyle:{
+            backgroundColor: '#70012B',
+        },
+        headerTintColor: 'white'
+    }
 });
 
 export default createAppContainer(Navigator);
