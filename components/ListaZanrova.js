@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 2 },
         shadowRadius: 5,
-        overflow: 'hidden',
+        overflow: 
+        Platform.OS === 'android' && Platform.Version >=21 ? 'hidden' : 'visible',
         shadowOpacity: 0.12,
         height: 100,
         alignItems:'center',
